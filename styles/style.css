@@ -91,7 +91,7 @@ span {
 .content {
   display: flex;
   padding-inline: 30px;
-  padding-block: 133px;
+  padding-block: 60px;
   gap: 30px;
 }
 
@@ -341,11 +341,6 @@ span {
   object-position: center;
 }
 
-.preloader-template {
-  display: block;
-  inline-size: 394px;
-  block-size: 107px;
-}
 
 .more-button {
   inline-size: 399px;

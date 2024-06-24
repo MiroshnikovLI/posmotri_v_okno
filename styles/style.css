@@ -91,7 +91,7 @@ span {
 .content {
   display: flex;
   padding-inline: 30px;
-  padding-block: 60px;
+
   gap: 30px;
 }
 
@@ -341,21 +341,7 @@ span {
   object-position: center;
 }
 
-
 .more-button {
   inline-size: 399px;
   margin-bottom: 2px;
-}
-
-
-
-
-.error {
-  position: absolute;
-}
-
-.preloader {
-  position: absolute;
-  inline-size: 100%;
-  block-size: 100%;
 }

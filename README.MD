@@ -1,4 +1,0 @@
-https://github.com/MiroshnikovLI/posmotri_v_okno
-
-
-

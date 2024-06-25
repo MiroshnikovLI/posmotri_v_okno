@@ -9,8 +9,12 @@ html {
 }
 
 .page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
   inline-size: 1200px;
-  block-size: 100%;
+  block-size: 800px;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -90,8 +94,8 @@ span {
   
 .content {
   display: flex;
-  padding-inline: 30px;
-
+  inline-size: 1140px;
+  block-size: 536px;
   gap: 30px;
 }
 
@@ -120,7 +124,6 @@ span {
 
 .search-form {
   display: flex;
-  justify-content: end;
   align-items: end;
   gap: 40px;
   inline-size: 100%;

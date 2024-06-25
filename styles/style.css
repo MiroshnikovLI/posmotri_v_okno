@@ -133,7 +133,6 @@ span {
   flex-direction: column;
   gap: 5px;
   inline-size: 225px;
-  block-size: 54px;
   border: none;
 }
 
@@ -195,7 +194,6 @@ span {
   flex-wrap: nowrap;
   gap: 15px;
   inline-size: 212px;
-  block-size: 22px;
 }
 
 .search-form__label:hover span {
@@ -214,7 +212,7 @@ span {
   outline: none;
 }
 
-.search-form__label input[type=checkbox]:checked + span::after {
+.search-form__checkbox:checked + span::after {
   display: flex;
   content: "";
   margin: 1px;
@@ -246,11 +244,14 @@ span {
   display: flex;
   position: relative;
   flex-direction: column;
-  gap: 30px;
   padding: 2px;
   inline-size: 406px;
   block-size: 300px;
   overflow: hidden;
+}
+
+.content__list-item:not(:last-child) {
+  margin-block-end: 30px;
 }
 
 .content__list:hover {
@@ -259,14 +260,14 @@ span {
 
 .content__list-item { 
   inline-size: 394px;
-  block-size: 108px;
+
 }
 
-.content__list-item:active {
+.content__card-link_current {
   background-color: #545050 ;
 }
 
-.content__list-item:hover .content__video-card-title,  {
+.content__list-item:hover .content__video-card-title  {
   text-decoration: underline
 }
 
@@ -297,11 +298,6 @@ span {
   background: rgba(0, 0, 0, .5);
 }
 
-.cards-list-item-template {
-  min-inline-size: 399px;
-  min-block-size: 234px;
-}
-
 .content__card-link {
   display: block;
   max-inline-size: 100%;
@@ -316,6 +312,7 @@ span {
 
 .content__video-card-description-container {
   inline-size: 200px;
+  padding: 2px;
 }
 
 .content__video-card-title {
@@ -325,11 +322,14 @@ span {
   font-size: 30px;
   line-height: 30px;
   color: #fff;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .content__video-card-description {
   font-family: 'Fira Sans Condensed', sans-serif;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 18px;
   line-height: 16.2px;
   color: #fff;
@@ -343,6 +343,5 @@ span {
 }
 
 .more-button {
-  inline-size: 399px;
-  margin-bottom: 2px;
+  inline-size: 100%;
 }

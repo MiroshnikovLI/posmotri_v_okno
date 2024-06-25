@@ -10,7 +10,7 @@ html {
 
 .page {
   display: grid;
-  align-items: center;
+  place-items: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
